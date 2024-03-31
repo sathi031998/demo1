@@ -1,9 +1,5 @@
 pipeline {
-	agent {
-		label 'ssh'
-	}
-	tools {
-        maven 'maven1' 
+	agent any 
     }
 	stages {
 		stage ('build') {
